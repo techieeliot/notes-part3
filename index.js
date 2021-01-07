@@ -71,10 +71,10 @@ let notes = [
     }
 
     const note = {
+      id: generateMaxId(),
       content: body.content,
       important: body.important || false,
       date: new Date(),
-      id: generateMaxId(),
     }
 
     notes = notes.concat(note)
